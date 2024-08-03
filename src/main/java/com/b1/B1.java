@@ -10,12 +10,15 @@ package com.b1;
  */
 public class B1 {
     public static void main(String[] args) {
-        Circle cr1=new Circle();
-        cr1.setBanKinh(2);
-        cr1.inThongTin();
-        Rectangle rt1=new Rectangle();
-        rt1.setChieuDai(8);
-        rt1.setChieuRong(4);
-        rt1.inThongTin();
+        Vector vt1=new Vector();
+        Vector vt2=new Vector();
+        vt1.nhapThongTin(1, 2, 3);
+        vt2.nhapThongTin(3, 2, 1);
+        vt1.inThongTin();
+        vt2.inThongTin();
+        vt1.nhanHangSo(2);
+        vt1.tichVoHuong(vt2);
+        vt1.congVector(vt2);
     }
+    
 }
