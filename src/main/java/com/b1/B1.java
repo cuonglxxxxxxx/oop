@@ -10,15 +10,14 @@ package com.b1;
  */
 public class B1 {
     public static void main(String[] args) {
-        Vector vt1=new Vector();
-        Vector vt2=new Vector();
-        vt1.nhapThongTin(1, 2, 3);
-        vt2.nhapThongTin(3, 2, 1);
-        vt1.inThongTin();
-        vt2.inThongTin();
-        vt1.nhanHangSo(2);
-        vt1.tichVoHuong(vt2);
-        vt1.congVector(vt2);
+         NhanVien nv1=new NhanVien();
+         nv1.setTenNhanVien("Le Xuan Cuong");
+         nv1.setHeSoLuong(3);
+         nv1.setLuongCoBan(5);
+         nv1.setLUONG_MAX(20);
+         nv1.inTTin();
+         nv1.tangLuong(0.5);
+         nv1.inTTin();
     }
     
 }
