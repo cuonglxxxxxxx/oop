@@ -4,6 +4,8 @@
  */
 package com.quanly;
 
+import java.util.Objects;
+
 /**
  *
  * @author Lenovo
@@ -14,7 +16,20 @@ public class SinhVien {
     private String queQuan;
     private double chieuCao;
     private double canNang;
-    
+    public SinhVien(String ten,int nam,String que,double cao,double nang){
+    this.tenSinhVien=ten;
+    this.queQuan=que;
+    this.canNang=nang;
+    this.chieuCao=cao;
+    this.namSinh=nam;
+    }
+    public SinhVien(){
+    this.tenSinhVien="No name";
+    this.namSinh=2000;
+    this.chieuCao=1.75;
+    this.canNang=74;
+    this.queQuan="Chua xac dinh";
+    }
     public void inThongTin (){
         System.out.println("Thong tin sinh vien:");
         System.out.println("Ho ten: "+this.tenSinhVien);
@@ -60,6 +75,39 @@ public class SinhVien {
 
     public void setCanNang(double canNang) {
         this.canNang = canNang;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final SinhVien other = (SinhVien) obj;
+        if (this.namSinh != other.namSinh) {
+            return false;
+        }
+        if (Double.doubleToLongBits(this.chieuCao) != Double.doubleToLongBits(other.chieuCao)) {
+            return false;
+        }
+        if (Double.doubleToLongBits(this.canNang) != Double.doubleToLongBits(other.canNang)) {
+            return false;
+        }
+        if (!Objects.equals(this.tenSinhVien, other.tenSinhVien)) {
+            return false;
+        }
+        return Objects.equals(this.queQuan, other.queQuan);
     }
     
 }
