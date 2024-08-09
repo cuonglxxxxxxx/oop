@@ -3,22 +3,26 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.vd1;
+import com.quanly.Test;
 import java.util.Scanner;
 /**
  *
  * @author Lenovo
  */
 public class vd2 {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Nhap so can tinh giai thua");
-        int a;
-        int gt=1;
-        a=sc.nextInt();
-        while(a>1){
-        gt*=a;
-        a--;
-        }
-        System.out.printf("Giai thua cua %d la %d",a,gt);
-    }
+  private Test d1,d2;
+ private Test d3,d4;
+ public vd2(Test p1,Test p2,Test p3,Test p4){
+  d1=p1;
+  d2=p2;
+  d3=p3;
+  d4=p4;
+ }
+ public void inTuGiac(){
+ d1.inDiem();;
+ d2.inDiem();
+ d3.inDiem();;
+ d4.inDiem();
+     System.out.println();
+ }
 }
