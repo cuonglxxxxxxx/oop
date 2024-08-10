@@ -19,7 +19,9 @@ public class TuGiac {
   d3=p3;
   d4=p4;
  }
- public TuGiac(String a){
+
+ // neu khong muon bi loi thi dung super o dau khi tao constructor cua lop con super(String) vd: super("Cuong"}
+  public TuGiac(String a){
      System.out.println("Le Xuan Cuong");
 }
  public void inTuGiac(){
