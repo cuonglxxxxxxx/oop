@@ -4,17 +4,17 @@
  */
 package com.quanly;
 
-import com.mycompany.vd1.vd2;
+import com.mycompany.vd1.TuGiac;
 import java.util.Objects;
 
 /**
  *
  * @author Lenovo
  */
-public class HinhVuong extends vd2 {
+public class HinhVuong extends TuGiac{
  public HinhVuong(){
-d1 = new Test(0,0); d2 = new Test(0,1);
-d3 = new Test(1,0); d4 = new Test(1,1);
+d1 = new Diem(0,0); d2 = new Diem(0,1);
+d3 = new Diem(1,0); d4 = new Diem(1,1);
 }
 
 }

@@ -9,10 +9,10 @@ import com.quanly.HinhVuong;
  *
  * @author Lenovo
  */
-public class Test {
+public class Diem {
  private int x,y;
- public Test(){};
- public Test(int x,int y){
+ public Diem(){};
+ public Diem(int x,int y){
  this.x=x;
  this.y=y;
  }

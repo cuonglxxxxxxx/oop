@@ -3,25 +3,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.vd1;
-import com.quanly.Test;
+import com.quanly.Diem;
 import java.util.Scanner;
 /**
  *
  * @author Lenovo
  */
-public class vd2 {
- protected Test d1,d2,d3,d4;
- public void setD1(Test _d1){d1=_d1;}
- public Test getD1(){return d1;}
- public vd2(Test p1,Test p2,Test p3,Test p4){
+public class TuGiac {
+ protected Diem d1,d2,d3,d4;
+ public void setD1(Diem _d1){d1=_d1;}
+ public Diem  getD1(){return d1;}
+ public  TuGiac (Diem p1,Diem p2,Diem p3,Diem p4){
   d1=p1;
   d2=p2;
   d3=p3;
   d4=p4;
  }
- public vd2(){
-d1 = new Test(); d2 = new Test(0,1);
-d3 = new Test(1,1); d4 = new Test(1,0);
+ public TuGiac(String a){
+     System.out.println("Le Xuan Cuong");
 }
  public void inTuGiac(){
  d1.inDiem();
