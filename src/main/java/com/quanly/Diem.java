@@ -4,7 +4,7 @@
  */
 package com.quanly;
 import java.util.Scanner;
-import com.quanly.SinhVien;
+import com.quanly.HinhVuong;
 /**
  *
  * @author Lenovo
