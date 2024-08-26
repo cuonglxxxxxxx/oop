@@ -8,6 +8,7 @@ import java.util.Scanner;
  *
  * @author Lenovo
  */
+
 public class NhanVien {
     private String tenNhanVien;
     private double heSoLuong;
@@ -57,6 +58,7 @@ public class NhanVien {
      }
      return true;
     }
+
     public void inTTin(){
         System.out.println("Thong tin:");
         System.out.println("Ten: "+this.tenNhanVien);
