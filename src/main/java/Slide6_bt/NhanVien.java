@@ -58,8 +58,8 @@ public class NhanVien {
      return true;
     }
     public void inTTin(){
-        System.out.println("Thong tin nhan vien:");
-        System.out.println("Ten nhan vien: "+this.tenNhanVien);
+        System.out.println("Thong tin:");
+        System.out.println("Ten: "+this.tenNhanVien);
         System.out.println("He so luong: "+this.heSoLuong);
         System.out.println("Luong co ban: "+LUONG_CO_BAN);
         System.out.println("Luong max: "+LUONG_MAX);
