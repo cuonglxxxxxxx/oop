@@ -8,17 +8,13 @@ package Slide6_bt;
  *
  * @author Lenovo
  */
-public class SoDuKhongDuException extends Exception{
+public class TuoiException extends Exception {
 
-    public SoDuKhongDuException() {
+    public TuoiException() {
     }
-    public SoDuKhongDuException(String message) {
+
+    public TuoiException(String message) {
         super(message);
     }
-
-    public SoDuKhongDuException(Throwable cause) {
-        super(cause);
-    }
-    
     
 }
