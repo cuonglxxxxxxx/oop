@@ -8,19 +8,17 @@ package Slide6_bt;
  *
  * @author Lenovo
  */
-public class Box<T> {
-    private T value;
+public class SoDuKhongDuException extends Exception{
 
-    public Box(T value) {
-        this.value = value;
+    public SoDuKhongDuException() {
+    }
+    public SoDuKhongDuException(String message) {
+        super(message);
     }
 
-    public T getValue() {
-        return value;
+    public SoDuKhongDuException(Throwable cause) {
+        super(cause);
     }
-
-    public void setValue(T value) {
-        this.value = value;
-    }
+    
     
 }
